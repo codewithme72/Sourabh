@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>I Love You</title>
+  </head>
+  <body>
+    <form action="#">
+      <h2>I Love You ❤️</h2>
+      <h3>Will you be my girlfriend?</h3>
+      <div class="buttons">
+        <input type="submit" value="Yes" id="yes" onclick="link()" />
+        <input type="submit" value="No" id="no" />
+      </div>
+    </form>
+    <script>
+      const yesButton = document.getElementById("yes");
+      const noButton = document.getElementById("no");
+
+      noButton.addEventListener("mouseenter", () => {
+        yesButton.classList.add("swipe-out");
+        noButton.classList.add("swipe-out");
+        yesButton.classList.add("swipe-in");
+        noButton.classList.add("swipe-in");
+      });
+
+      yesButton.addEventListener("animationend", () => {
+        const temp = yesButton.cloneNode(true);
+        yesButton.parentNode.insertBefore(temp, yesButton);
+        noButton.parentNode.insertBefore(yesButton, noButton);
+        noButton.parentNode.insertBefore(noButton, temp);
+        temp.parentNode.removeChild(temp);
+        yesButton.classList.remove("swipe-out", "swipe-in");
+        noButton.classList.remove("swipe-out", "swipe-in");
+      });
+
+      
+      function link() {
+        window.open("./thanks.html", "_blank");
+      }
+
+    </script>
+  </body>
+</html>

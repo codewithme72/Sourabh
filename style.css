@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 2rem;
+  background-image: url("./Pink\ Peach\ Minimalist\ Valentine\ Propose\ -\ Instagram\ Story.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  max-width: 20rem;
+  margin: 0 auto;
+  margin-top: 100px;
+  background: rgba(255, 255, 255, 0.575);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+  border: 1px solid rgba(255, 255, 255, 0.49);
+  position: relative; /* Make the container position relative */
+  height: 200px; /* Fixed height for the container */
+}
+
+h2 {
+  margin-left: 20px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.buttons {
+  position: absolute; /* Position the buttons absolutely */
+  bottom: 20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%; /* Ensure buttons fill container width */
+}
+
+#yes,
+#no {
+  width: 100px; /* Fixed width for the buttons */
+  height: 40px; /* Fixed height for the buttons */
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#yes {
+  background-color: #4caf50;
+}
+
+#no {
+  background-color: #d32f2f;
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.1);
+}
+
+@keyframes swipe {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.swipe-out {
+  animation: swipe 0.5s ease forwards;
+}
+
+.swipe-in {
+  animation: swipe 0.5s ease forwards reverse;
+}
+
+@media (max-width: 768px) {
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  input[type="submit"] {
+    padding: 0.5rem 1.5rem;
+  }
+  body {
+    background-image: url("./sourav.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 130%;
+  }
+}

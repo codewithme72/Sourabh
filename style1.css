@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  text-align: center;
+  background-color: #65d2c2;
+  padding: 2rem;
+  /* background-image: url("./Pink\ Peach\ Minimalist\ Valentine\ Propose\ -\ Instagram\ Story.png"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  max-width: 20rem;
+  margin: 0 auto;
+  margin-top: 100px;
+  background: rgba(255, 255, 255, 0.575);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+  border: 1px solid rgba(255, 255, 255, 0.49);
+  position: relative; /* Make the container position relative */
+  height: 200px; /* Fixed height for the container */
+}
+
+h2 {
+  margin-left: 20px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+h3 {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.buttons {
+  position: absolute; /* Position the buttons absolutely */
+  bottom: 20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%; /* Ensure buttons fill container width */
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+
+  input[type="submit"] {
+    padding: 0.5rem 1.5rem;
+  }
+  body {
+    /* background-image: url("./sourav.jpg"); */
+    /* background-color: aqua; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 130%;
+  }
+  /* button{
+    font-size: 24px;
+    min-width: 196px;
+    margin-left: 45px;
+    padding: 10px 10px;
+  } */
+}
+
+/* CSS */
+button {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+button {
+  outline: 0;
+}
+
+a{
+    text-decoration: none;
+}
